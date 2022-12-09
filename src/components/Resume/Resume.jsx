@@ -9,11 +9,13 @@ import {
 
 export default class Resume extends Component {
   render() {
+    const { income, expense, total } = this.props;
+    
     return (
       <div className="container-resume">
-        <Card title="Entrada" Icon={FaRegArrowAltCircleUp} value={1000} />
-        <Card title="Saídas" Icon={FaRegArrowAltCircleDown} value={1000} />
-        <Card title="Total" Icon={FaDollarSign} value={1000} />
+        <Card title="Entrada" Icon={FaRegArrowAltCircleUp} value={income} />
+        <Card title="Saídas" Icon={FaRegArrowAltCircleDown} value={expense} />
+        <Card title="Total" Icon={FaDollarSign} value={total} />
       </div>
     )
   }

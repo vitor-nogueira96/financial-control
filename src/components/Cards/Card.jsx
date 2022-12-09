@@ -8,7 +8,9 @@ export default class Card extends Component {
       <div className="container-card">
         <header className="header">
           <div>{title}</div>
-          <Icon /> 
+          <svg>
+            <Icon /> 
+          </svg>
         </header>
         <span>{value}</span>
       </div>
