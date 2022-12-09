@@ -1,11 +1,13 @@
 import React from 'react'
-import Header from './Header/Header';
-import './styles/App.css';
+import Header from './components/Header'
+import Resume from './components/Resume/Resume'
+import './styles/App.css'
 
 const App = () => {
   return (
     <div>
       <Header />
+      <Resume />
     </div>
   )
 }
