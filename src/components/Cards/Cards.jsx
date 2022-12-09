@@ -10,9 +10,9 @@ export default class Cards extends Component {
           <p>{title}</p>
           <svg>
           </svg>
-          <Icon value={value}/>
+          <Icon />
         </header>
-          <span>1000</span>
+          <span value>{value}</span>
         </div>
     )
   }

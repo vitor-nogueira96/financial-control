@@ -5,11 +5,12 @@ import './Resume.css'
 
 class Resume extends Component {
   render() {
+    const { income, expense, total} = this.props
     return (
       <div className='resume-container'>
-        <Cards title="Entradas" Icon={ FaRegArrowAltCircleUp } value='a' />
-        <Cards title="Saídas" Icon={FaRegArrowAltCircleDown} value='b' />
-        <Cards title="Total"Icon={FaDollarSign} value='c' />
+        <Cards title="Entradas" Icon={ FaRegArrowAltCircleUp } value={income} />
+        <Cards title="Saídas" Icon={FaRegArrowAltCircleDown} value={expense} />
+        <Cards title="Total"Icon={FaDollarSign} value={total} />
       </div>
     )
   }

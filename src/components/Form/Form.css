@@ -22,21 +22,29 @@
   }
 }
 
-input {
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-container input {
   outline: none;
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 15px;
   border: 1px solid #ccc;
+  margin-left: 3px;
 }
 
 .radio-container {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
 .radio-container input {
-  margin-left: 20px;
+  margin-left: 10px;
   accent-color: black;
   margin-top: 0;
 }
