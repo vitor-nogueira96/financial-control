@@ -3,13 +3,14 @@ import './Card.css'
 
 export default class Card extends Component {
   render() {
+    const { Icon, title, value } = this.props;
     return (
       <div className="container-card">
         <header className="header">
-          <p>entrada</p>
-          <img src="icon" alt="icon" />
-          <span>1000</span>
+          <div>{title}</div>
+          <Icon /> 
         </header>
+        <span>{value}</span>
       </div>
     )
   }
