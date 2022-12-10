@@ -1,0 +1,11 @@
+.container-header {
+  height: 150px;
+  text-align: center;
+  background: teal;
+}
+
+
+.header {
+  padding-top: 20px;
+  color: #fff;
+}
