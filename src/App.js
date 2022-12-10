@@ -6,8 +6,8 @@ import './styles/App.css';
 
 
 const App = () => {
-  const data = localStorage.getItem("trasactions");
-  const [trasactionsList, setTransactionsList] = useState(
+  const data = localStorage.getItem("transactions");
+  const [transactionsList, setTransactionsList] = useState(
     data ? JSON.parse(data) : []
   );
     const [income, setIncome] = useState(0)
@@ -15,11 +15,11 @@ const App = () => {
     const [total, setTotal] = useState(0)
 
     useEffect(() => {
-      const amountExpense = setTransactionsList
+      const amountExpense = transactionsList
         .filter((item) => item.expense)
         .map((transaction) => Number(transaction.amount));
 
-      const amountIncome = setTransactionsList
+      const amountIncome = transactionsList
         .filter((item) => !item.expense)
         .map((transaction) => Number(transaction.amount));
 
@@ -32,21 +32,21 @@ const App = () => {
       setExpense(`R$ ${expense}`)
       setTotal(`${Number(income) < Number(expense) ? '-' : ''}R$ ${total}`)
 
-    }, [trasactionsList])
+    }, [transactionsList])
 
     const handleAdd = (transaction) => {
       const newArrayTransactions = [...transactionsList, transaction];
 
       setTransactionsList(newArrayTransactions);
 
-      localStorage.setItem('transactions', JSON.stringify(newArrayTransactions))
+      localStorage.setItem('transactions', JSON.stringify(newArrayTransactions));
     }
 
   return (
     <div>
       <Header />
       <Resume income={income} expense={expense} total={total} />
-      <Form />
+      <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList} />
     </div>
   )
 }
