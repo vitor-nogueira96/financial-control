@@ -9,6 +9,7 @@ import {
 
 export default class Resume extends Component {
   render() {
+  
     const { income, expense, total } = this.props;
     
     return (
