@@ -43,16 +43,18 @@ span {
   .container-card {
     width: 20%;
   }
-  
+  div {
+    font-size: 15px;
+  }
   p {
-    font-size: 12px;
+    font-size: 10px;
   }
   
   span {
-    font-size: 20px;
+    font-size: 16px;
   }
   
-  svg {
+  /* svg {
     display: none;
-  }
+  } */
 };

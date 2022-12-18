@@ -8,21 +8,7 @@ table {
   margin: 20px auto;
 }
 
-thead {
-
-}
-
-tbody {
-
-}
-
-tr {
-
-}
-
 th {
-  /* text-align: center; */
   border-bottom: inset;
   padding-bottom: 5px; 
-  /* width: auto; */
 }

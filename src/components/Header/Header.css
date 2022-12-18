@@ -1,14 +1,15 @@
 .container-header {
   height: 150px;
   text-align: center;
-  background: teal;
+  background: #EB5E28;
 }
 
 .header {
   padding-top: 20px;
   color: #fff;
+  
 }
 
 .title {
-  color: #fff;
+  color: #252422;
 }
